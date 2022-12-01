@@ -1,0 +1,324 @@
+/* 
+    Template name : Football,
+    Author Name : AR Sabbir
+ */
+
+ /* ---------------> Table Content <-------------- */
+
+/* -------------> Utility Start<-------------*/
+:root{
+    --font-family:font-family: 'Poppins', sans-serif;
+    --font-Weight400: 400;
+    --font-Weight500: 500;
+    --font-Weight700: 700;
+    --font-size16:16px;
+    --font-size64:64px;
+    --font-size28:28px;
+    --font-size48:48px;
+    --font-size18:18px;
+    --font-size72:72px;
+    --blue: #2d25a0;
+    --white: #ffffff;
+    --red: #e02c6d;
+    --black:#18191f
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.container{
+    max-width: 1250px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+  }
+
+ul li{
+    list-style: none;
+  }
+ a{
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn{
+    padding: 10px 24px;
+    background-color: var(--red);
+    font-size: var(--font-size16);
+
+    font-weight: var(--font-Weight500);
+    font-style: normal;
+    font-family: var(--font-family);
+    color: var(--white);
+    
+  }
+
+.colums3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* headder section start */
+#header{
+    background-color: var(--blue);
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.header-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+.header-row .header-button{
+    justify-self: end;
+}
+.header-button a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    color: var(--white);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--font-Weight500);
+    font-size: var(--font-size16);
+
+}
+.header-menu ul li:first-child a {
+    padding-left: 0;
+  }
+
+/* .login_button a{
+    display: block;
+    color: var(--white);
+} */
+.login_button a img{
+width: 24px;
+}
+.header-menu ul li{
+    display: inline;
+    
+}
+.header-menu ul li a{
+    display: inline-block;
+    padding: 10px;
+    color: var(--white);
+    font-size:var(--font-size16);
+    font-weight: var(--font-Weight500);
+    font-family: var(--font-family);
+    font-style: normal;
+    text-transform: capitalize;
+    
+}
+
+/* headder section end */
+
+
+/* banner section start */
+#banner_section{
+    background-color: var(--blue);
+    padding-bottom: 40px;
+    
+}
+.banner_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.banner_left {
+    display: grid;
+    align-items: center;
+}
+
+.title h1{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--font-Weight700);
+    color: var(--white);
+    font-size: var(--font-size64);
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+.banner_but {
+    padding: 8px 40px;
+}
+
+/* .title a::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 21px;
+    height: 14px;
+    position: absolute;
+    object-fit: cover;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: 24px;
+
+  }
+   */
+  .title a::after{
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    background-image: url(../img/arrow.png);
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    margin: auto;
+    right: 10px;
+    top: 10px;
+} 
+.title a{
+    /* font-size:var(--font-size16) ;
+    font-weight: var(--font-Weight500);
+    font-style: normal;
+    font-family: var(--font-family);
+    color: var(--white); */
+    position: relative;
+    
+}
+
+/* banner section end */
+/* player section start */
+
+#player_section{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.player_row{
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.details{
+    box-shadow: 0px 0px 0px 40px rgba( 0 0 0 0/15%) ;
+}
+.details {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.person img{
+    width: 100%;
+    height: auto;
+}
+.person h1{
+    font-size: var(--font-size28);
+    font-weight: var(--font-Weight700);
+    font-family: var(--font-family);
+    font-style: normal;
+    color: #18191f;
+}
+.person p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-size: var(--font-size16);
+    line-height: 26px;
+    font-weight: var(--font-Weight400);
+    color:  #6C6C6C;
+    margin: 10px 0;
+}
+
+/* player section end */
+
+/* ------------------->hightslights sectioin start <-------------------- */
+
+section#hightlights {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.highlights_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hight_left{
+    display: grid;
+    align-items: center;
+}
+
+.lights h1{
+    font-family: var(--font-family);
+    font-size: var(--font-size48);
+    font-weight: var(--font-Weight700);
+    font-style: normal;
+    line-height: 60px;
+    color:#0A0826 ;
+}
+
+.lights p{
+font-family: var(--font-family);
+font-size: var(--font-size16);
+font-style: normal;
+font-weight: var(--font-Weight400);
+line-height: var(--font-size28);
+padding-top: 10px;
+padding-bottom: 16px;
+} 
+.high_but{
+    width: 100px;
+}
+
+/* hightslights sectioin end  */
+
+
+/* footer start */
+.footer_row{
+    display: grid;
+    justify-content: center;
+}
+.footer_image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 20px;
+
+}
+.icon a {
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    display: inline-block;
+    color: #969BAB;
+    background-color: #e7e7e8;
+    font-size: 21px;
+    border-radius: 30px;
+    text-align: center;
+}
+.copy_right p{
+    font-size: var(--font-size18);
+    font-weight: var(--font-Weight400);
+    font-style: normal;
+    font-family: var(--font-family);
+    color: var(--black);
+}
+
+.copy_right{
+    display: grid;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+/* footer end */
